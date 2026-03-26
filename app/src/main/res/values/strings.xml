@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Monitor de Recursos</string>
+    <string name="title_monitor">Monitor do Sistema</string>
+    <string name="title_battery">Detalhes da Bateria</string>
+    <string name="title_ram">Detalhes da RAM</string>
+    <string name="title_storage">Detalhes do Armazenamento</string>
+    <string name="title_sensors">Sensores do Dispositivo</string>
+    
+    <string name="battery_label">Bateria</string>
+    <string name="ram_label">Memória RAM</string>
+    <string name="storage_label">Armazenamento</string>
+    
+    <string name="battery_status">%1$d%%</string>
+    <string name="battery_temp">Temperatura: %1$.1f °C</string>
+    <string name="battery_charging">Status: %1$s</string>
+    <string name="status_charging">Carregando</string>
+    <string name="status_discharging">Descarregando</string>
+    <string name="status_full">Cheia</string>
+    <string name="status_not_charging">Não está carregando</string>
+    
+    <string name="ram_status">%1$d MB / %2$d MB livres</string>
+    <string name="storage_status">%1$d GB / %2$d GB livres</string>
+    
+    <string name="btn_battery">Ver Bateria</string>
+    <string name="btn_ram">Ver RAM</string>
+    <string name="btn_storage">Ver Armazenamento</string>
+    <string name="btn_sensors">Ver Sensores</string>
+    <string name="btn_back">Voltar</string>
+    <string name="btn_clean_ram">Limpar Memória</string>
+    <string name="ram_cleaned">Memória liberada com sucesso!</string>
+
+    <string name="storage_category_images">Fotos</string>
+    <string name="storage_category_videos">Vídeos</string>
+    <string name="storage_category_music">Músicas</string>
+    <string name="storage_category_docs">Documentos</string>
+    <string name="storage_category_apks">APKs</string>
+    <string name="storage_category_apps">Apps e Sistema</string>
+    <string name="calculating">Calculando...</string>
+    
+    <string name="btn_clear_cache">Limpar Cache do App</string>
+    <string name="cache_cleaned">Cache do aplicativo limpo!</string>
+</resources>

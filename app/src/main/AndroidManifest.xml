@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissões de Armazenamento -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    
+    <!-- Permissão para acessar todos os arquivos (Android 11+) -->
+    <!-- Nota: Esta permissão é restrita na Play Store, mas necessária para varredura completa de arquivos como APKs e Docs em qualquer pasta -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+
+    <!-- Permissão para limpar processos (RAM) -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    
+    <!-- Permissão para sensores corporais (ex: Frequência Cardíaca) -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BatteryActivity" />
+        <activity android:name=".RamActivity" />
+        <activity android:name=".StorageActivity" />
+        <activity android:name=".SensorsActivity" />
+    </application>
+
+</manifest>
